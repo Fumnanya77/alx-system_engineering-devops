@@ -1,2 +1,2 @@
 #!bin/bash
-Shell basics project..
+Shell basics project.
