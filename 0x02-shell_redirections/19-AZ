@@ -1,0 +1,2 @@
+#!/bin/bash
+ex -sc '%s/A/Z/g|%s/c/e/g' -cx
