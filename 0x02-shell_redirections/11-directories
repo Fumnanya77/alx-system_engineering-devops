@@ -1,2 +1,2 @@
 #!/bin/bash
-du -sk .g .pof .local/share
+du -sk .
