@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $PATH | find -type d | wc -l
+echo $PATH | find -type d | rev | cut -d '/' -f1|rev
