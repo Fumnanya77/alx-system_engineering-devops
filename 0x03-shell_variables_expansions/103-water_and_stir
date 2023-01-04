@@ -1,2 +1,5 @@
 #!/bin/bash
-(echo 'ibase=$water; obase=$bestchol; $WATER')+(echo 'ibase=$stir; obase=$bestchol; $STIR')
+wat=$(($water#$WATER))
+str=$(($stir#$STIR))
+ten=$wat+$str
+echo $(($bestchol#$ten))
