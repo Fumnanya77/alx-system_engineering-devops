@@ -1,5 +1,2 @@
 #!/bin/bash
-wat=$(($water#$WATER))
-str=$(($stir#$STIR))
-ten=$wat+$str
-echo $(($bestchol#$ten))
+echo $(($bestchol#$(($water#WATER))+$(($stir#STIR))))
