@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Creating a bash loop using while statement
-while (( i<=10 )); do
+while (( i<10 )); do
 echo "Best School";
 (( i++ ));
 done

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Creating a bash loop using until statement
+i=0;
+until [ $i -ge 10 ];
+do
+	echo "Best School";
+	(( i++ ));
+done
