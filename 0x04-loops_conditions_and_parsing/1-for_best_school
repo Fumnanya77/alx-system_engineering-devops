@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Crating a bash loop using for staement
+for i in `seq 1 10`;do
+echo "Best School"
+done
