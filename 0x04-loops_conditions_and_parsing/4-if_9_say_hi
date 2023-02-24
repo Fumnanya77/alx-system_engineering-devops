@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 # insert HI after the ninth loop
-while (( i<10 ));
+i=1;
+while (( i<=10 ));
 do
-	if [ "$i" -eq 9 ];
+	echo "Best School";
+	if [[ "$i" -eq 9 ]];
 	then
 		echo "Hi";
 	fi
-	echo "Best School";
-	(( i++ ));
+	(( ++i ));
 done

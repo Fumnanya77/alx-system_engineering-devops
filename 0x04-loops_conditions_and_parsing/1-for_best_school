@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Crating a bash loop using for statement
 bsh=10
-for (( i=1; i<=bsh; i++ ));do
-echo "Best School";
+for (( i=1; i<=bsh; i++ ));
+do
+	echo "Best School";
 done
