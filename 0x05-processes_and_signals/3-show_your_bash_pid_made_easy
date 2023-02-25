@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Bash pid made easy 
+ps | awk '{print $1,$4}' | grep bash
