@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Getting the pid of the running process
+pidof pidof

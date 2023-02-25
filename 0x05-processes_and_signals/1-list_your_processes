@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# The pid user full information in BSD format
+ps aux
