@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Infinite loop that  cannot be terminated
+i=0;
+while (( i < 10 ));
+do
+	echo "To infinity and beyond";
+	sleep 2;
+	if [[ ]];
+	then
+	fi
+done
