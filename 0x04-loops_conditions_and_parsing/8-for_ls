@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 # list the files in the current directory after the first dash in their names
-for i in $((ls));
+
+for ((i=1; i<$(ls); i++));
 do
+	cut -d '-' -f 2 $i;
+done
