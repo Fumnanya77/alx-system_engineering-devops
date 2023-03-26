@@ -1,0 +1,22 @@
+https://drive.google.com/file/d/1Pij7RoBCGDtAkWF1e67RdQFJwRzoau6G/view?usp=sharing
+
+FIREWALLS
+	A Firewall is a network security device that monitors and filters incoming and outgoing network traffic based on an organization's previously established security policies. At its most basic, a firewall is essentially the barrier that sits between a private internal network and the public Internet.
+
+SSL
+	An SSL certificate is a digital certificate that authenticates a website's identity and enables an encrypted connection. SSL stands for Secure Sockets Layer
+
+MONITORING
+	Network monitoring is the process of constantly monitoring a computer network for problems such as slow traffic or component failure.
+
+WHY TERMINATING SSL AT LOAD BALANCER LEVEL IS AN ISSUE
+	Terminating SSL at the load balancer level can present some security concerns. When SSL termination is performed at the load balancer, the decrypted traffic is then forwarded to the backend servers over an unencrypted connection, which could potentially allow a third party to intercept and view the data being transmitted.
+
+Furthermore, if SSL termination is performed at the load balancer level, the backend servers do not have access to the SSL certificate, which means that they cannot verify the authenticity of the incoming requests. This could make the backend servers vulnerable to man-in-the-middle attacks and other security threats.
+
+Why having only one MySQL server capable of accepting writes is an issue
+ This may cause SPOF issue, challenges with flexibility and scalability, therefore reduction in reliabilty
+
+
+ Why having servers with all the same components (database, web server and application server) might be a problem
+ 	This may cause foreseen and unforeseen problems like reduced scalability, high-cost of maintanance, reduc4d flexibility and increased complexity

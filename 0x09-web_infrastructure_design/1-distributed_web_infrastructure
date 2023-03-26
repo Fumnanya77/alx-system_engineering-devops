@@ -1,0 +1,29 @@
+https://drive.google.com/file/d/1PoLCNnxLhHf1Ijq2uuht1H_-Rb91J4xT/view?usp=sharing
+
+Continuation from the previous architecture.....
+
+THE LOAD BALANCER
+	A server was configured as the Load balancer server, which is able to split traffic and therefore reduce the SPOF at the servers by making one Active-Active.
+	Because of the simplicity of the algorithm, the algorithm used is Round-Robin, that sequentially assigning the traffic to the servers
+
+SECOND SERVER
+	 A second server was added which comprises of the the same component but has anactive-passive technology implemented in it.
+
+ACTIVE-ACTIVE OR ACTIVE PASSIVE AND DIFFERENCE
+	The load balancer is enabling active-active.
+	The difference between the two is that active-active deploy two or more active system instances and can be used to improve scalability as well as provide high availability. In active-active deployments, all instances handle requests concurrently.
+	While Active-passive deploy an active instance that handles requests and a passive instance that is on standby. In addition, a heartbeat mechanism is set up between these two instances.
+
+MASTER-SLAVE DATABASE
+	Master-slave replication enables data from one database server (the master) to be replicated to one or more other database servers (the slaves).
+	The primary node is the main node while the slaves node are the replica.
+
+ISSUES WITH THE ARCHITECTURE
+SPOF
+	The SPOF is on the Load balancer, if the load balancer fails at any point, it affects hoe the traffic is shared that if configured in automatic recovery, which will in turn affect the servers.
+
+SECURITY
+	The is security checking point in this architecture, that is, data may be compromised, exposeed or made unavailable by any simple malicious activity
+
+MONITORING
+	Network monitoring is the process of constantly monitoring a computer network for problems such as slow traffic or component failure. The network is obviously not monitored.

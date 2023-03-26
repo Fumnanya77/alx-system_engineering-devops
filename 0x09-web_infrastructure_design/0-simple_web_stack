@@ -1,0 +1,44 @@
+https://drive.google.com/file/d/1PvcYwy1EqT4fo10jdJQYunvVmjT03-3n/view?usp=sharing
+
+The diagram shows a user who wants to access a site by the domain-name :www.foobar.com, she enters the domain name, it gets the IP Addresss by requesting it from the DNS Server, which gives the domain nam if available and sends this to the web server which fetches the web page or responds with an error if page not found. This is a simple demonstration of the web infrastructure. 
+
+SERVERS
+	A server is a piece of computer hardware or software that provides functionality for other programs or devices, called "clients."
+	This architecture is called the client–server model.
+	Servers are located in datacenters; datacenters are buildings that host hundreds or even thousands of computers in this case servers.
+	They are like computers without keyboards, mouses, screens and are only accessible by anetwork
+	Servers an be as afore implied physical or virtual or both. Servers run on Operating Systems.
+
+DNS
+	DNS meaning Domain Name System is a protocol or technology that allows computers communicate via the internet.
+	It translates human-adapted, text-based domain names to machine-adapted, numerical-based Internet Protocol.
+	It also consists of subsystems like the DNS Resolver Root Name Servers and so on that that make this translation possible.
+
+	A Record is the type of record that points a domain name of an IP Address.
+
+WHAT A WEB SERVER DOES
+	A web server delivers static web content—e.g., HTML pages, files, images, video—primarily in response to hypertext transfer pro	tocol (HTTP) requests from a web browser.
+	It's fundamental job is to accept and fulfill requests from clients for static content from a website (HTML pages, files, images, video, and so on).
+	The client is almost always a browser or mobile application and the request takes the form of a Hypertext Transfer Protocol (HTTP) message, as does the web server’s response.
+
+WHAT AN APPLICATION SERVER DOES
+	An application server provides web pages or application content that is dynamic or allows complex user interactions.
+	An application server typically can deliver web content too, but its primary job is to enable interaction between end-user clients and server-side application code—the code representing what is often called business logic—to generate and deliver dynamic content, such as transaction results, decision support, or real-time analytics.
+
+THE ROLE OF A DATABASE
+	Database servers are used to store and manage databases that are stored on the server and to provide data access for authorized users. This type of server keeps the data in a central location that can be regularly backed up. It also allows users and applications to centrally access the data across the network.
+	Database software helps users or companies store, manage, retrieve, update or change files, information logs and other forms of digital data.
+
+The internet protocol (IP) Address is the standard means of communication between or among devices on the internet.
+
+
+ISSUES OR CHALLENGES THAT CAN BE FACED BY THIS INFRASTRUCTURE
+
+SPOF - Single Point Of Failure
+	The Single point of failure in this archtecture is almost at all points because there is just one server, and if any thing goes wronmg with this server(a problem in configuration or networking), there is nothing to fall-back system for this server andd therefore, the company is out of service which will definetly yeild a bad otcome.
+
+DOWNTIME
+		Also server ought to be upgraded at a certain time, which could lead to downtimes i.e some amount of time that the server is intentionally put out of service, but minimizing this downtime is the goal of every company, with this architecture for a web infratructure, a lot of time will be wasted during downtime becasue as aforementioned in the SPOF. there is no fall-back and maintaing a one sevrer will take a lot of time because all components may be upgraded, and this no good on the client's side.
+
+SCALING
+	In cases of traffic, overloading causes servers to crash, and in case of one server, well business is over!!
