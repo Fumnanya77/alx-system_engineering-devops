@@ -6,8 +6,8 @@ exec { 'apt-update':
 }
 
 package { 'flask':
-  require  => Exec['apt-update'],
   ensure   => '2.1.0',
+  require  => Exec['apt-update'],
   provider => 'pip',
 }
 
