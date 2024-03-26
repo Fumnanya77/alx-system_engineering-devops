@@ -1,6 +1,6 @@
+#This is a manifest that kills that kills a  running process killmenow
+
 exec { 'kill_killmenow_process':
-    command     => 'pkill -f killmenow',
-    path        => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin/bin:/usr/local/games:/usr/games',
-    onlyif      => 'pgrep -f killmenow',
-    refreshonly => true,
+  command => 'pkill -9 killmenow',
+  path    => '/usr/bin',
 }
