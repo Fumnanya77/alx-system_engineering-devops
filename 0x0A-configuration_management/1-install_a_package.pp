@@ -5,10 +5,3 @@ exec { 'install flask':
   path    => '/usr/bin',
   unless  => 'pip3 list | grep flask',
 }
-
-#package { 'flask':
-#  ensure   => '2.1.0',
-#  command  => 'pip3 install flask',
-#  provider => 'pip3',
-#  unless   => 'pip3 list | grep flask',
-#}
